@@ -5,7 +5,10 @@
 - Sections
 - Form
 - Clearfix
-- Media Queries	
+- Media Queries
+	- max-width: 768px
+	- max-device-width: 767px and orientation: landscape
+	- max-width: 400px
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* General Content
@@ -141,6 +144,9 @@ div.middle {
 }
 #myCalculator form input[type="number"],
 #myCalculator form select {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 	width: 100px;
 	height: 30px;
 	color: #aaa;
@@ -161,9 +167,6 @@ div.middle {
     -webkit-appearance: none; 
 }
 #myCalculator form select {
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
 	font-size: 1em;
 }
 #myCalculator form select::-ms-expand {
@@ -227,6 +230,9 @@ div.middle {
 		width: 25%;
     	height: 100%;
 	}
+	#myCalculator form p {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -260,46 +266,3 @@ div.middle {
 		font-size: .8em;
 	}
 }
-
-/*@media screen and (max-width: 500px) {
-	#myCalculator {
-		font-size: .9375em;
-	}
-	#myCalculator main.main_content section {
-		background-size: 45px 71px;
-		padding-top: 80px;
-	}
-	#myCalculator main.main_content h4 {
-		font-size: .75em;
-		letter-spacing: 0;
-	}
-	#myCalculator main.main_content p {
-		font-size: 1.1em;
-		margin-bottom: 5px;
-	}
-	#myCalculator main.main_content p + p {
-		font-size: 1em;
-	}
-	#myCalculator main.main_content p + p::after {
-		display: block;
-		color: #fff;
-	}
-	#myCalculator form h4 {
-		font-size: 1.1em;
-		margin: 0;
-	}
-	#myCalculator form p {
-		font-size: .8em;
-		line-height: 14px;
-	}
-	#myCalculator form br {
-		display: inline;
-	}
-	#myCalculator form input[type="number"] {
-		width: 30px;
-		font-size: .8em;
-	}
-	#myCalculator form select {
-		font-size: .8em;
-	}
-}*/
